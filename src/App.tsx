@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as _ from 'lodash'
 
 function App() {
+  useEffect(() => {
+    const a = _.add(1,23)
+    console.log(a)
+  })
   return (
     <div className="App">
       <header className="App-header">
